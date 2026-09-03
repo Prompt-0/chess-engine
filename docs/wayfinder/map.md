@@ -18,7 +18,8 @@ A complete, fully functional chess system featuring a high-performance, tourname
 
 <!-- the index: one line per closed ticket, enough to judge relevance, then zoom the link for the detail the ticket holds -->
 
-*(No closed tickets yet - map just charted)*
+- [Chess Opening Books and Endgame Tablebases Feasibility](./tickets/T09-chess-openings-and-tablebases-research.md): Memory-mapped Polyglot (.bin) books in T06; Syzygy tablebases in Phase 2 via SyzygyPath UCI option and Lichess API fallback.
+
 
 ## Not yet specified
 
