@@ -76,4 +76,21 @@ _Avoid_: Cutoff move, hot move
 A search optimization where passing the turn verifies if a shallower search still yields a beta cutoff to prune subtrees.
 _Avoid_: Pass move, skip turn
 
+**PeSTO Tables**:
+Tomasz Michniewski's standardized Piece-Square Tables providing opening and endgame positional square bonuses for each piece type.
+_Avoid_: Heatmap, square scores
+
+**Game Phase**:
+A material-weighted scalar representing the transition from Opening (Phase 24) to Endgame (Phase 0).
+_Avoid_: Stage value, game clock
+
+**Passed Pawn**:
+A pawn with no opposing pawns on the same file or adjacent files ahead of it on its path to promotion.
+_Avoid_: Free pawn, clear pawn
+
+**Evaluator Trait**:
+A decoupled interface abstraction allowing alternative scoring backends (HCE, NNUE) to be plugged into the search engine seamlessly.
+_Avoid_: Evaluation function, score delegate
+
+
 

@@ -22,7 +22,9 @@ A complete, fully functional chess system featuring a high-performance, tourname
 - [Bitboard Representation and Sliding Attack Technique](./tickets/T02-bitboard-representation-and-sliding-attack-technique.md): Fancy Magic Bitboards (~800KB table), hybrid bitboards + 64-square mailbox, 16-bit packed moves, and branchless castling masks.
 - [Move Generator Architecture and Perft Verification Suite](./tickets/T03-movegen-and-perft-verification-suite.md): Strictly legal move generation with bitwise pin/check masks, 520-byte stack MoveList, staged captures/quiets generation, and 4-position Perft suite.
 - [Search Algorithm and Pruning Heuristics](./tickets/T04-search-algorithm-and-pruning-heuristics.md): Negamax with PVS & aspiration windows, Quiescence with delta pruning, 6-tier move ordering, 16-byte TT, NMP, RFP, and LMR.
+- [Tapered Evaluation and PeSTO Piece-Square Tuning](./tickets/T05-tapered-evaluation-and-pesto-tuning.md): 24-point tapered interpolation, dual PeSTO tables, pawn structure/king safety, and Evaluator trait seam.
 - [Chess Opening Books and Endgame Tablebases Feasibility](./tickets/T09-chess-openings-and-tablebases-research.md): Memory-mapped Polyglot (.bin) books in T06; Syzygy tablebases in Phase 2 via SyzygyPath UCI option and Lichess API fallback.
+
 
 
 
