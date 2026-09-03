@@ -1,0 +1,41 @@
+# Chess Engine & Interactive UI
+
+A high-performance chess computation engine and interactive web interface for playing, analyzing, and inspecting chess games.
+
+## Language
+
+**Engine**:
+The headless, compute-intensive calculation backend that performs move generation, board evaluation, and position search.
+_Avoid_: Bot, AI agent, solver
+
+**UCI**:
+The standard Universal Chess Interface protocol used to communicate with chess engines via standard input and output streams.
+_Avoid_: API, CLI protocol, chess RPC
+
+**Bitboard**:
+A 64-bit unsigned integer representing the occupancy or attack footprint of pieces across the 64 squares of a chessboard.
+_Avoid_: Board array, square grid
+
+**Ply**:
+A single half-move made by either White or Black. Two consecutive plies constitute one full chess move.
+_Avoid_: Turn, half-turn, move step
+
+**Transposition Table**:
+A fixed-size in-memory hash table indexed by Zobrist hash keys that caches search results, depths, evaluation bounds, and best moves to prevent redundant subtree exploration.
+_Avoid_: Cache, hash map, memoizer
+
+**Quiescence Search**:
+An extension of the search algorithm at leaf nodes that evaluates only tactical captures and promotions until the position is calm, preventing the horizon effect.
+_Avoid_: Capture search, tactical resolver
+
+**Tapered Evaluation**:
+A heuristic evaluation scoring function that computes both opening and endgame values simultaneously and interpolates between them based on the current material game phase.
+_Avoid_: Static score, hybrid eval
+
+**Principal Variation (PV)**:
+The sequence of best moves predicted by the search algorithm assuming optimal play from both sides.
+_Avoid_: Best line, candidate sequence
+
+**Evaluation Bar**:
+A vertical graphical visualizer in the UI showing real-time winning probability and centipawn advantage for White or Black.
+_Avoid_: Score bar, advantage meter
