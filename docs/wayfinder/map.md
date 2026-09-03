@@ -23,7 +23,9 @@ A complete, fully functional chess system featuring a high-performance, tourname
 - [Move Generator Architecture and Perft Verification Suite](./tickets/T03-movegen-and-perft-verification-suite.md): Strictly legal move generation with bitwise pin/check masks, 520-byte stack MoveList, staged captures/quiets generation, and 4-position Perft suite.
 - [Search Algorithm and Pruning Heuristics](./tickets/T04-search-algorithm-and-pruning-heuristics.md): Negamax with PVS & aspiration windows, Quiescence with delta pruning, 6-tier move ordering, 16-byte TT, NMP, RFP, and LMR.
 - [Tapered Evaluation and PeSTO Piece-Square Tuning](./tickets/T05-tapered-evaluation-and-pesto-tuning.md): 24-point tapered interpolation, dual PeSTO tables, pawn structure/king safety, and Evaluator trait seam.
+- [UCI Protocol and Search Time Allocation](./tickets/T06-uci-protocol-and-time-management.md): Dual-thread architecture with AtomicBool stop flag, soft/hard time budgeting equations, and Polyglot root dispatch.
 - [Chess Opening Books and Endgame Tablebases Feasibility](./tickets/T09-chess-openings-and-tablebases-research.md): Memory-mapped Polyglot (.bin) books in T06; Syzygy tablebases in Phase 2 via SyzygyPath UCI option and Lichess API fallback.
+
 
 
 

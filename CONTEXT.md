@@ -92,5 +92,18 @@ _Avoid_: Free pawn, clear pawn
 A decoupled interface abstraction allowing alternative scoring backends (HCE, NNUE) to be plugged into the search engine seamlessly.
 _Avoid_: Evaluation function, score delegate
 
+**Soft Limit**:
+A search time threshold where the engine finishes its current iterative deepening depth and declines to start the next iteration.
+_Avoid_: Target time, soft stop
+
+**Hard Limit**:
+An absolute time ceiling where the engine immediately interrupts search calculation to prevent losing on time.
+_Avoid_: Maximum clock, hard kill
+
+**UCI Protocol Loop**:
+The asynchronous command processor reading UCI text commands from standard input while streaming real-time search telemetry to standard output.
+_Avoid_: CLI reader, console listener
+
+
 
 
