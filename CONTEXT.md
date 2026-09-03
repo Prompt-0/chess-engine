@@ -60,3 +60,20 @@ _Avoid_: Frozen piece, absolute bound
 A bitboard ray representing the squares where an attacked side can interpose or capture to resolve an active check.
 _Avoid_: Block ray, defense line
 
+**PVS (Principal Variation Search)**:
+An alpha-beta optimization that proves non-PV moves cannot exceed the current best line using zero-width null-window searches.
+_Avoid_: Scout search, null probe
+
+**MVV-LVA**:
+A move-ordering heuristic prioritizing captures that score the highest victim value with the lowest attacker value.
+_Avoid_: Greedy capture, victim sort
+
+**Killer Move**:
+A quiet move that caused a beta-cutoff at the same search ply in a sibling sub-tree.
+_Avoid_: Cutoff move, hot move
+
+**Null-Move Pruning**:
+A search optimization where passing the turn verifies if a shallower search still yields a beta cutoff to prune subtrees.
+_Avoid_: Pass move, skip turn
+
+
