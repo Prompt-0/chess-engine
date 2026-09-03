@@ -5,7 +5,7 @@ type: wayfinder:prototype
 status: open
 blocked_by:
   - T07-websocket-bridge-framing-and-ipc
-assignee: unassigned
+assignee: agy
 ---
 
 ## Question
