@@ -19,7 +19,9 @@ A complete, fully functional chess system featuring a high-performance, tourname
 <!-- the index: one line per closed ticket, enough to judge relevance, then zoom the link for the detail the ticket holds -->
 
 - [Project Scaffolding and Workspace Setup](./tickets/T01-project-scaffolding-and-workspace-setup.md): Configured monorepo workspace with Rust engine crate, Node.js WebSocket bridge on port 5001, and Vite/React/Tailwind UI on port 3000.
+- [Bitboard Representation and Sliding Attack Technique](./tickets/T02-bitboard-representation-and-sliding-attack-technique.md): Fancy Magic Bitboards (~800KB table), hybrid bitboards + 64-square mailbox, 16-bit packed moves, and branchless castling masks.
 - [Chess Opening Books and Endgame Tablebases Feasibility](./tickets/T09-chess-openings-and-tablebases-research.md): Memory-mapped Polyglot (.bin) books in T06; Syzygy tablebases in Phase 2 via SyzygyPath UCI option and Lichess API fallback.
+
 
 
 

@@ -39,3 +39,11 @@ _Avoid_: Best line, candidate sequence
 **Evaluation Bar**:
 A vertical graphical visualizer in the UI showing real-time winning probability and centipawn advantage for White or Black.
 _Avoid_: Score bar, advantage meter
+
+**Magic Bitboards**:
+A technique using precomputed 64-bit magic multipliers and bit shifts to hash piece blocker configurations into sliding attack lookup tables.
+_Avoid_: Ray tracer, collision map
+
+**LERF (Little-Endian Rank-File)**:
+The square numbering standard where square index 0 represents A1, 7 represents H1, and 63 represents H8.
+_Avoid_: 2D coordinate, row-major index
