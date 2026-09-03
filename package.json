@@ -1,0 +1,14 @@
+{
+  "name": "aether-chess-monorepo",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Monorepo for AetherChess engine, UCI WebSocket bridge, and modern Web UI",
+  "scripts": {
+    "build:engine": "cargo build --release --manifest-path engine/Cargo.toml",
+    "test:engine": "cargo test --manifest-path engine/Cargo.toml",
+    "check:engine": "cargo clippy --manifest-path engine/Cargo.toml -- -D warnings",
+    "start:bridge": "node bridge/src/server.js",
+    "dev:ui": "npm run dev --prefix ui",
+    "build:ui": "npm run build --prefix ui"
+  }
+}
