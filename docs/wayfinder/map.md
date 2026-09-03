@@ -24,7 +24,9 @@ A complete, fully functional chess system featuring a high-performance, tourname
 - [Search Algorithm and Pruning Heuristics](./tickets/T04-search-algorithm-and-pruning-heuristics.md): Negamax with PVS & aspiration windows, Quiescence with delta pruning, 6-tier move ordering, 16-byte TT, NMP, RFP, and LMR.
 - [Tapered Evaluation and PeSTO Piece-Square Tuning](./tickets/T05-tapered-evaluation-and-pesto-tuning.md): 24-point tapered interpolation, dual PeSTO tables, pawn structure/king safety, and Evaluator trait seam.
 - [UCI Protocol and Search Time Allocation](./tickets/T06-uci-protocol-and-time-management.md): Dual-thread architecture with AtomicBool stop flag, soft/hard time budgeting equations, and Polyglot root dispatch.
+- [WebSocket Bridge Framing and Engine Process Lifecycle](./tickets/T07-websocket-bridge-framing-and-ipc.md): Dedicated subprocess per client connection, 50ms telemetry throttling, structured JSON protocol, and heartbeat recovery.
 - [Chess Opening Books and Endgame Tablebases Feasibility](./tickets/T09-chess-openings-and-tablebases-research.md): Memory-mapped Polyglot (.bin) books in T06; Syzygy tablebases in Phase 2 via SyzygyPath UCI option and Lichess API fallback.
+
 
 
 

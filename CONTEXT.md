@@ -104,6 +104,19 @@ _Avoid_: Maximum clock, hard kill
 The asynchronous command processor reading UCI text commands from standard input while streaming real-time search telemetry to standard output.
 _Avoid_: CLI reader, console listener
 
+**UCI Bridge**:
+The WebSocket middleware service that converts raw stdio text streams from the native chess engine into structured JSON events for web clients.
+_Avoid_: Backend server, proxy
+
+**Telemetry Throttling**:
+Rate-limiting high-frequency search progress lines to 20 updates/second to prevent browser UI frame drops while preserving immediate move delivery.
+_Avoid_: Message drop, buffer delay
+
+**Dedicated Session Engine**:
+An engine process lifecycle pattern where each active web client owns an isolated native engine child process.
+_Avoid_: Shared engine, pool process
+
+
 
 
 
