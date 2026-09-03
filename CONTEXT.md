@@ -47,3 +47,16 @@ _Avoid_: Ray tracer, collision map
 **LERF (Little-Endian Rank-File)**:
 The square numbering standard where square index 0 represents A1, 7 represents H1, and 63 represents H8.
 _Avoid_: 2D coordinate, row-major index
+
+**Perft**:
+A deterministic verification procedure that walks the legal move tree to a specified depth and counts leaf nodes to validate chess rule correctness.
+_Avoid_: Move counter, tree audit
+
+**Pin Mask**:
+A bitboard identifying pieces pinned against their King that are constrained to move exclusively along their ray of pin.
+_Avoid_: Frozen piece, absolute bound
+
+**Check Mask**:
+A bitboard ray representing the squares where an attacked side can interpose or capture to resolve an active check.
+_Avoid_: Block ray, defense line
+
